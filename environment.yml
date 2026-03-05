@@ -1,0 +1,11 @@
+name: zju2gs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - tqdm
+  - pip
+  - pip:
+      - opencv-python
