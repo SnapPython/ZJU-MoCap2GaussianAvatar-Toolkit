@@ -15,9 +15,7 @@ ZJU-MoCap2GaussianAvatar-Toolkit/
 ├── .gitignore               
 └── data/                    # 【本地数据目录】
     ├── raw/                 # 放入解压后的原始数据
-    │   └── .gitkeep
     └── prepared/            # 脚本运行后的标准化输出结果
-        └── .gitkeep
 ```
 ---
 
@@ -61,7 +59,9 @@ conda activate zju2gs
 python main.py --raw_dir ./data/raw --out_dir ./data/prepared --view 0
 ```
 
-转换完成后，`data/prepared/` 下生成的文件夹即可直接丢进 GaussianAvatar 项目中开始训练。
+转换完成后，`data/prepared/` 下生成包含 images/, masks/, cameras.npz, poses_optimized.npz 的文件夹。
+
+在 GaussianAvatar 仓库中，利用作者提供的工具完成后续格式转换。
 
 ---
 
